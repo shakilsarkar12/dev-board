@@ -1,3 +1,16 @@
+// upadeted date
+const newDate = new Date();
+const updateTime = (newDate.toLocaleString('en-us', {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+}).replace(/,/g, ""));
+const currentTimeParent = document.getElementById('current-date-time');
+currentTimeParent.innerHTML = `
+    <span class="text-[#00303C] text-lg font-medium">${updateTime}</span>
+`
+
 let completedBtns = document.querySelectorAll(".completed");
 for (let completedBtn of completedBtns) {
     completedBtn.addEventListener("click", function (event) {
@@ -32,13 +45,13 @@ for (let completedBtn of completedBtns) {
 };
 
 
-document.getElementById("theme-btn").addEventListener("click", function(){
+document.getElementById("theme-btn").addEventListener("click", function () {
     let number1 = Math.floor(Math.random() * 200);;
     let number2 = Math.floor(Math.random() * 200);;
     let number3 = Math.floor(Math.random() * 200);;
     document.body.style.backgroundColor = `rgb(${number1}, ${number2}, ${number3})`;
 })
 
-document.getElementById("discover-new-btn").addEventListener("click", function(){
+document.getElementById("discover-new-btn").addEventListener("click", function () {
     window.location.href = "./blog.html"
 })
