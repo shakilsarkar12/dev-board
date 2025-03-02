@@ -40,49 +40,88 @@
                 DOM?</h1>
             <!-- dash dash border -->
             <div class="w-full border-b-[1px] border-[#d3d3d3] border-dashed my-1"></div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum. Nemo, magni. Magni,
-                quos dolorem? Itaque iste, aliquid nam dignissimos quis ex earum voluptas exercitationem repellendus
-                esse incidunt harum unde!</p>
+            <!-- answer -->
+            <div class="p-4 text-gray-500 question-1">
+                <p class="text-lg">There are five ways to select an element from the DOM.</p>
+                <p class="text-lg">The ways are:</p>
+                <ul class="list-[circle] ml-5 ">
+                    <li>getElementsByTagName, </li>
+                    <li>getElementsByClassName</li>
+                    <li>getElementById</li>
+                    <li>querySelector</li>
+                    <li>querySelectorAll</li>
+                </ul>
+            </div>
         </div>
         <!-- Question-2 -->
         <div class="bg-white rounded-lg">
-            <h1 class="p-4 font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <h1 class="p-4 font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and
+                textContent ?</h1>
             <!-- dash dash border -->
             <div class="w-full border-b-[1px] border-[#d3d3d3] border-dashed my-1"></div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum. Nemo, magni. Magni,
-                quos dolorem? Itaque iste, aliquid nam dignissimos quis ex earum voluptas exercitationem repellendus
-                esse incidunt harum unde!</p>
+            <!-- answer -->
+            <div class="p-4 text-gray-500">
+                <p class="text-base mb-4"><span class="font-medium text-lg">1. innerHTML: </span>innerHTML can be used
+                    to access the text and tags inside an element.</p>
+
+                <p class="text-base mb-4"><span class="font-medium text-lg">2. innerText: </span>innerText returns only
+                    the text inside the element, not any hidden text.</p>
+
+                <p class="text-base dddd"><span class="font-medium text-lg">3. textContent: </span>textContent returns
+                    all the text contained within an element and all its child elements.</p>
+            </div>
+        </div>
         </div>
         <!-- Question-3 -->
         <div class="bg-white rounded-lg">
             <h1 class="p-4 font-semibold text-xl">Question-3: What is event delegation in the DOM?</h1>
             <!-- dash dash border -->
             <div class="w-full border-b-[1px] border-[#d3d3d3] border-dashed my-1"></div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum. Nemo, magni. Magni,
-                quos dolorem? Itaque iste, aliquid nam dignissimos quis ex earum voluptas exercitationem repellendus
-                esse incidunt harum unde!</p>
+            <!-- answer -->
+            <p class="p-4 text-gray-500">Event delegation is a method of handling child elements by setting an event
+                listener on a parent element. Event delegation uses less memory space, resulting in much better
+                performance.</p>
         </div>
         <!-- Question-4 -->
         <div class="bg-white rounded-lg">
             <h1 class="p-4 font-semibold text-xl">Question-4: What is event bubbling in the DOM?</h1>
             <!-- dash dash border -->
             <div class="w-full border-b-[1px] border-[#d3d3d3] border-dashed my-1"></div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum. Nemo, magni. Magni,
-                quos dolorem? Itaque iste, aliquid nam dignissimos quis ex earum voluptas exercitationem repellendus
-                esse incidunt harum unde!</p>
+            <!-- answer -->
+            <p class="p-4 text-gray-500">Event bubbling is the process by which an event occurs in a child element, then
+                in its parent element, from the parent element to the grandparent element, and then up to the document.
+            </p>
+            <p class="p-4 text-gray-500 text-sm"><span class="text-black font-medium text-base">For example -
+                </span>button > div > body > document</p>
         </div>
         <!-- Question-5 -->
         <div class="bg-white rounded-lg">
-            <h1 class="p-4 font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <h1 class="p-4 font-semibold text-xl">Question-5: How do you create, add, and remove elements using
+                JavaScript?</h1>
             <!-- dash dash border -->
             <div class="w-full border-b-[1px] border-[#d3d3d3] border-dashed my-1"></div>
-            <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum. Nemo, magni. Magni,
-                quos dolorem? Itaque iste, aliquid nam dignissimos quis ex earum voluptas exercitationem repellendus
-                esse incidunt harum unde!</p>
+            <!-- answer -->
+            <div class="p-4 text-gray-500">
+                <p class="text-base mb-4"><span class="font-medium text-lg">1. Create: </span>To create a new element in
+                    JavaScript, we need to use the <span
+                        class="text-lg font-medium">"document.createElement(tagName)"</span></p>
+
+                <p class="text-base mb-4"><span class="font-medium text-lg">1. Add: </span>To add a new element in
+                    JavaScript, we need to use the <span
+                        class="text-lg font-medium">"parent.appendChild(newElement)"</span></p>
+
+                <p class="text-base mb-4"><span class="font-medium text-lg">1. Remove: </span>To remove element in
+                    JavaScript, we need to use the <span class="text-lg font-medium">"parent.removeChild(child)"</span>
+                </p>
+            </div>
         </div>
     </main>
 
-    <script src="js/blog.js"></script>
+    <script>
+        document.getElementById("back-to-desk").addEventListener("click", function () {
+            window.location.href = "./index.html"
+        })
+    </script>
 </body>
 
 </html>
