@@ -1,8 +1,8 @@
 # FlagshipFaceOff Resources
 
-[Live Demo](https://flagship-face-off.netlify.app/)
+[Live Demo](shakilsarkar12.github.io/dev-board/)
 
-## Documentation Links
+# Documentation Links
 - [React](https://react.dev/)
 - [Vite](https://vite.dev/)
 - [React Router](https://reactrouter.com/)
